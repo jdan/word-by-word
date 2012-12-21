@@ -19,6 +19,10 @@ input.text {
   font-size: 28px;
 }
 
+#error {
+  color: red;
+}
+
 .word {
   padding: 3px;
   margin: 4px 0;
