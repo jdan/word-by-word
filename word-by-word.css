@@ -1,0 +1,27 @@
+/* CSS declarations go here */
+
+body {
+  font: 28px/32px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  color: #222;
+}
+
+#content {
+  width: 960px;
+  margin: 50px auto;
+}
+
+#arena {
+  margin-bottom: 50px;
+}
+
+input.text {
+  font-size: 28px;
+}
+
+.word {
+  padding: 3px;
+  margin: 4px 0;
+  background-color: #ccc;
+  display: inline-block;
+}

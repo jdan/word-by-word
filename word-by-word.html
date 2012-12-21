@@ -1,0 +1,27 @@
+<head>
+  <title>word-by-word</title>
+</head>
+
+<body>
+  <div id="content">
+    {{> arena}}
+  </div>
+</body>
+
+<template name="arena">
+  <h1>Arena</h1>
+  
+  <div id="arena">
+    {{#each words}}
+      {{> word}}
+    {{/each}}
+  </div>
+
+  <input class="text" type="text" placeholder="Enter a word" />
+</template>
+
+<template name="word">
+  <div class="word">
+    {{content}}
+  </div>
+</template>
