@@ -22,14 +22,8 @@ if (Meteor.isClient) {
     },
 
     'click input.undo': function(event) {
-      var allWords = Words.find();
-      var last_id;
-      // overwrite "last_id" each time
-      allWords.forEach(function(item) {
-        last_id = item._id;
-      });
-
-      Words.remove(last_id);
+      var length = Words.find({}).count();
+      Words.remove(Words.findOne({}, {skip: length-1}));
     },
 
     'click input.obliterate': function(event) {
